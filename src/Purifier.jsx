@@ -36,7 +36,7 @@ const Purifier = () => {
             <div className="sm:block hidden">
                 <img
                     src={alkaline}
-                    className="sm:h-[570px] sm:w-[100%] h-[auto]"
+                    className="sm:h-[570px]  h-[auto]"
                     alt=""
                 />
             </div>
