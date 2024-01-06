@@ -13,23 +13,23 @@ import tap from "./assets/Tap.png"
 
 const HeroSection = () => {
 
-return (
+    return (
         <>
             <section className=" pt-10 pb-28  bg-[#e6e5e7]">
-                <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
-                    <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
+                <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex sm:flex-col lg:flex-row md:px-8">
+                    <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl ">
                         <h1 className="text-sm text-indigo-600 font-medium">
                             Over 200 successful deals
                         </h1>
                         <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
-                        INTRODUCING THE HYDROGEN PLUS! ALKALINE WATER IONIZER
+                            INTRODUCING THE HYDROGEN PLUS! ALKALINE WATER IONIZER
                         </h2>
                         <p>
-                        THE ELECTROLYTIC HYDROGEN WATER GENERATOR FROM INDIA
+                            THE ELECTROLYTIC HYDROGEN WATER GENERATOR FROM INDIA
                         </p>
                         <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
                             <a href="javascript:void(0)" className="block py-2 px-4 text-center text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none">
-                               Read More
+                                Read More
                             </a>
                             {/* <a href="javascript:void(0)" className="flex items-center justify-center gap-x-2 py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg md:inline-flex">
                                 Get access
@@ -50,22 +50,22 @@ return (
                 <div className="mt-11 px-4 md:px-8 ">
                     <p className="text-center text-sm text-gray-700 font-semibold">Trusted by millions of people</p>
                     <div className="flex justify-center items-center flex-wrap gap-x-12 gap-y-6 mt-6">
-                       <img src={CustomerService} className="size-20"/>
-                       <img src={Guarantee} className="size-20"/>
-                       <img src={Achievements} className="size-20"/>
+                        <img src={CustomerService} className="size-20" />
+                        <img src={Guarantee} className="size-20" />
+                        <img src={Achievements} className="size-20" />
                     </div>
                 </div>
             </section>
             <div className="">
-                <div className="absolute sm:mt-40 sm:ml-[50rem] z-30 ml-10 mt-20">
-                <h1 className="text-white capitalize text-3xl sm:text-4xl sm:w-[300px] w-[300px] ">AVAIL INCREDIBLE BENEFITS</h1>
-                <h3 className="text-white">With everyday wellness, at your fingertips</h3>
+                <div className="absolute sm:mt-40 sm:ml-[50rem] z-30 ml-10 mt-20 md:ml-28">
+                    <h1 className="text-white capitalize text-3xl sm:text-4xl sm:w-[300px] w-[300px] ">AVAIL INCREDIBLE BENEFITS</h1>
+                    <h3 className="text-white">With everyday wellness, at your fingertips</h3>
                 </div>
                 <div>
-                <img src={tap} className="absolute  h-[323px] sm:h-[423px]  object-cover"/>
+                    <img src={tap} className="absolute  h-[323px] sm:h-[423px]  object-cover" />
                 </div>
                 <div className="">
-                <img src={health} className="w-full  h-[323px] sm:h-[423px] object-cover" />
+                    <img src={health} className="w-full  h-[323px] sm:h-[423px] object-cover" />
                 </div>
             </div>
         </>

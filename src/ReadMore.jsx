@@ -9,9 +9,9 @@ import pioneers from "./assets/Pioneers1.png.webp"
 const ReadMore = () => {
     return (
         <section className=" pt-10 pb-28  bg-white">
-            <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8 sm:w-auto w-[412px]">
-                <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
-                   
+            <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex sm:flex-col lg:flex-row md:px-8 sm:w-auto w-[412px] md:ml-18 lg:ml-0">
+                <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl md:mb-14">
+
                     <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
 
                         PROVIDING QUALITY AT PAR EXCELLENCE!
@@ -44,9 +44,9 @@ const ReadMore = () => {
                                 alt=""
                             />
                             <p className="">65 years of experience,
-                               <span className="block pl-10" >Since 1954</span> </p>
+                                <span className="block pl-10" >Since 1954</span> </p>
                         </div>
-                        <div  className="flex flex-col items-center sm:pl-32 pl-0 sm:pt-0 sm:pb-0 pt-6 pb-6">
+                        <div className="flex flex-col items-center sm:pl-32 pl-0 sm:pt-0 sm:pb-0 pt-6 pb-6">
                             <img
                                 src={sold}
                                 className=""
@@ -56,7 +56,7 @@ const ReadMore = () => {
                         </div>
                     </div >
                     <div className="flex-none sm:flex">
-                        <div  className="flex flex-col items-center sm:pt-0 sm:pb-0  pb-6">
+                        <div className="flex flex-col items-center sm:pt-0 sm:pb-0  pb-6">
                             <img
                                 src={japan}
                                 className=""

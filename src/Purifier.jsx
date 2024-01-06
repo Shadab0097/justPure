@@ -8,12 +8,12 @@ import warranty from "./assets/warranty.webp"
 
 const Purifier = () => {
     return (
-        <div className=" bg-[#e6e5e7] sm:bg-transparent flex flex-col items-center sm:flex-none py-10 sm:py-0">
-             <div className="sm:absolute sm:mt-36 sm:ml-[100px] flex flex-col items-center ">
+        <div className=" bg-[#e6e5e7] sm:bg-transparent flex flex-col items-center sm:flex-none py-10 sm:py-0 ">
+             <div className="sm:absolute sm:mt-36 sm:ml-[30px] flex flex-col items-center ">
             <h1 className="sm:text-5xl text-3xl">THE FUJIIRYOKI</h1>
               <span className="block"><h1 className="sm:text-5xl text-3xl">  ALKALINE WATER IONIZER</h1></span>
               </div>
-            <div className=" sm:absolute  sm:flex sm:mt-80 sm:ml-[100px]  ">
+            <div className=" sm:absolute  sm:flex sm:mt-80 sm:ml-[30px]  ">
 
                 <img
                     src={impurity}
@@ -33,10 +33,10 @@ const Purifier = () => {
 
             </div>
            
-            <div className="sm:block hidden">
+            <div className="sm:block hidden ">
                 <img
                     src={alkaline}
-                    className="sm:h-[570px]  h-[auto]"
+                    className="sm:h-[570px]  h-[auto] md:object-cover lg:object-fill"
                     alt=""
                 />
             </div>
