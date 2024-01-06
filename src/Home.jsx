@@ -1,9 +1,9 @@
 import HeaderImg from './HeaderImg'
 import HeroSection from './HeroSection'
 import Carousel from './CaraousalImg'
-// import ReadMore from './ReadMore'
+import ReadMore from './ReadMore'
 // import Video from './Video'
-// import Purifier from './Purifier'
+import Purifier from './Purifier'
 import Header from './Header'
 import Footer from './Footer'
 
@@ -16,8 +16,8 @@ const Home = () => {
       <HeaderImg/>
        <HeroSection/>
        <Carousel/>
-       {/* <ReadMore/> */}
-       {/* <Purifier/> */}
+       <ReadMore/>
+       <Purifier/>
        {/* <Video/> */}
        <Footer/>
 

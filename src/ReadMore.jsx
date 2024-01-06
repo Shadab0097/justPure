@@ -8,8 +8,8 @@ import pioneers from "./assets/Pioneers1.png.webp"
 
 const ReadMore = () => {
     return (
-        <section className=" pt-10 pb-28  bg-white">
-            <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex sm:flex-col lg:flex-row md:px-8 sm:w-auto w-[412px] md:ml-18 lg:ml-0">
+        <section className=" pt-10 pb-28  bg-white w-[100vw]">
+            <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex sm:flex-col lg:flex-row md:px-8  md:ml-18 lg:ml-0">
                 <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl md:mb-14">
 
                     <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
