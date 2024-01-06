@@ -2,8 +2,8 @@ import HomeSectionImg from "./assets/Home-2nd-section.png"
 import CustomerService from "./assets/customer-service.webp"
 import Guarantee from "./assets/guarantee.webp"
 import Achievements from "./assets/achievement.webp"
-import health from "./assets/health-benifts_BG.jpg"
-import tap from "./assets/Tap.png"
+// import health from "./assets/health-benifts_BG.jpg"
+// import tap from "./assets/Tap.png"
 
 
 
@@ -56,7 +56,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </section>
-            <div className="">
+            {/* <div className="">
                 <div className="absolute sm:mt-40 sm:ml-[50rem] z-30 ml-10 mt-20 md:ml-28">
                     <h1 className="text-white capitalize text-3xl sm:text-4xl sm:w-[300px] w-[300px] ">AVAIL INCREDIBLE BENEFITS</h1>
                     <h3 className="text-white">With everyday wellness, at your fingertips</h3>
@@ -67,7 +67,7 @@ const HeroSection = () => {
                 <div className="">
                     <img src={health} className="w-full  h-[323px] sm:h-[423px] object-cover" />
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
