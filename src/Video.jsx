@@ -21,7 +21,7 @@ const Video = () => {
           >
             <source src="https://x7g2n7y5.rocketcdn.me/wp-content/uploads/2023/03/test_your_water_glass.mp4" type="video/mp4" />
           </video>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center  w-full h-full bg-[#2d2d2d] opacity-[0.4] sm:pt-[9rem] pt-10 md:pt-[5rem] lg:pt-[9rem] ">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center  w-full h-full bg-[#2d2d2d] opacity-[0.5] sm:pt-[9rem] pt-10 md:pt-[5rem] lg:pt-[9rem] ">
             <h1 className="text-xl md:text-xl lg:text-2xl font-bold mb-4">
               <span className="ml-4 md:ml-10">HOW MUCH DO YOU</span>
               <span className="block md:ml-8">REALLY KNOW ABOUT THE WATER</span>
@@ -41,7 +41,7 @@ const Video = () => {
             className="w-full h-full object-cover"
             alt="Image Alt Text"
           />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center  w-full h-full bg-[#2d2d2d] opacity-[0.4] sm:pt-[9rem] pt-10 md:pt-[5rem] lg:pt-[9rem]">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center  w-full h-full bg-[#2d2d2d] opacity-[0.5] sm:pt-[9rem] pt-10 md:pt-[5rem] lg:pt-[9rem]">
             <h1 className="text-xl md:text-xl lg:text-2xl font-bold mb-4">
               <span className="ml-4 md:ml-10">GET A HANDS-ON</span>
               <span className="block md:ml-8">EXPERIENCE OF THE</span>

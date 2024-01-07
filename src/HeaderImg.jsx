@@ -1,6 +1,11 @@
+import { useNavigate } from 'react-router-dom'
 import home_BG from './assets/home_BG.webp'
 
 const HeaderImg = () => {
+  const navigate = useNavigate()
+  const handleClick = ()=>{
+    navigate("/Contact")
+  }
     return (
         <>
         <div>
@@ -30,7 +35,7 @@ const HeaderImg = () => {
 
 Read More
           </p>
-          <button className="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-700">
+          <button className="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-700" onClick={handleClick}>
             Explore
           </button>
         </div>

@@ -42,7 +42,8 @@ const submitData = async (e)=>{
     company &&
     email &&
     phone &&
-    message ){
+    message &&
+    agreed){
    const res = await fetch('https://justpure-firebase-default-rtdb.firebaseio.com/userDataRecords.json',
    { method :"POST",
     headers: {
