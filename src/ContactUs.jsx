@@ -18,6 +18,7 @@ const ContactUs = () => {
   })
 
   const [errorMessage , setErrorMessage] = useState(null)
+  const[displaySubmit , setDisplaySubmit] = useState(false)
   const email2 = useRef(null)
   const phone2 = useRef(null)
   
@@ -54,6 +55,8 @@ const submitData = async ()=>{
     phone &&
     message &&
     agreed){
+
+      setDisplaySubmit(true)
    const res = await fetch('https://justpure-firebase-default-rtdb.firebaseio.com/userDataRecords.json',
    { method :"POST",
     headers: {
@@ -107,8 +110,7 @@ if(res){
          The Next Generation Water Purifier From India
         </p>
        {errorMessage && <h1 className='text-red-700 text-4xl'>{errorMessage}</h1>}
-      </div>
-      <form onSubmit={(e) => e.preventDefault()} method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+       {!displaySubmit ?  <form onSubmit={(e) => e.preventDefault()} method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -268,7 +270,9 @@ if(res){
             Lets Connect
           </button>
         </div>
-      </form>
+      </form> : <h1 className='text-purple-700 text-4xl'>Responose Submitted! we will Get Back to you as soon as possible</h1> }
+      </div>
+    
     </div>
     <Footer/>
     </>
