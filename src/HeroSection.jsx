@@ -1,4 +1,6 @@
-import HomeSectionImg from "./assets/Home-2nd-section.png"
+// import HomeSectionImg from "./assets/Home-2nd-section.png"
+import justpurePurifier from "./assets/images/justpurePurifier.jpg"
+
 import CustomerService from "./assets/customer-service.webp"
 import Guarantee from "./assets/guarantee.webp"
 import Achievements from "./assets/achievement.webp"
@@ -41,7 +43,7 @@ const HeroSection = () => {
                     </div>
                     <div className="flex-none mt-14 md:mt-0 md:max-w-xl">
                         <img
-                            src={HomeSectionImg}
+                            src={justpurePurifier}
                             className=" md:rounded-tl-[108px]"
                             alt=""
                         />
