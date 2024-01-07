@@ -1,8 +1,9 @@
 import Header from './Header'
 import Footer from './Footer'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
+import { CheckValdation } from './utils/Validate'
 
 const ContactUs = () => {
   const [agreed, setAgreed] = useState(false)
@@ -15,6 +16,11 @@ const ContactUs = () => {
     message:"",
 
   })
+
+  const [errorMessage , setErrorMessage] = useState(null)
+  const email2 = useRef(null)
+  const phone2 = useRef(null)
+  
  let name, value;
   const postUserData = (e)=>{
     name = e.target.name;
@@ -28,8 +34,12 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-const submitData = async (e)=>{
-      e.preventDefault()
+const submitData = async ()=>{
+  const errormessage = CheckValdation(email2.current.value, phone2.current.value)
+        setErrorMessage(errormessage)
+        console.log(phone2.current.value)
+        if (errormessage) return;
+      // e.preventDefault()
       const { firstName,
       lastName,
       company,
@@ -96,8 +106,9 @@ if(res){
         <p className="mt-2 text-lg leading-8 text-gray-600">
          The Next Generation Water Purifier From India
         </p>
+       {errorMessage && <h1 className='text-red-700 text-4xl'>{errorMessage}</h1>}
       </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form onSubmit={(e) => e.preventDefault()} method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -153,6 +164,7 @@ if(res){
             </label>
             <div className="mt-2.5">
               <input
+              ref={email2}
                 type="email"
                 name="email"
                 id="email"
@@ -161,6 +173,7 @@ if(res){
                 value={userData.email}
               onChange={postUserData}
               />
+             
             </div>
           </div>
           <div className="sm:col-span-2">
@@ -189,6 +202,7 @@ if(res){
                 />
               </div> */}
               <input
+              ref={phone2}
                 type="tel"
                 name="phone"
                 id="phone-number"
@@ -197,6 +211,8 @@ if(res){
                 value={userData.phone}
               onChange={postUserData}
               />
+              
+
             </div>
           </div>
           <div className="sm:col-span-2">
@@ -209,7 +225,7 @@ if(res){
                 id="message"
                 rows={4}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                defaultValue={''}
+                // defaultValue={''}
                 value={userData.message}
                 onChange={postUserData}
               />
