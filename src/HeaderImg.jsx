@@ -9,13 +9,33 @@ const HeaderImg = () => {
                     A WholeSome Water Purification Solution
                 </h2>
             </div> */}
-            <div className="">
-            <img
-                className="h-auto w-[100vw]"
-                src={home_BG}
-                alt="Your Company"
-            />
-          </div>
+            <div className="relative w-screen h-screen overflow-hidden">
+      {/* Image Overlay */}
+      <div className="absolute inset-0">
+        <img
+          className="w-full h-full object-cover"
+          src={home_BG}
+          alt="Background"
+        />
+      </div>
+
+      {/* Content Overlay */}
+      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="text-white text-center">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+          ALKALINE WATER IONIZER
+          </h1>
+          <p className="text-lg md:text-xl lg:text-2xl mb-8">
+          THE ELECTROLYTIC HYDROGEN WATER GENERATOR FROM INDIA
+
+Read More
+          </p>
+          <button className="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-700">
+            Explore
+          </button>
+        </div>
+      </div>
+    </div>
 
           
         </div>

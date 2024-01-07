@@ -10,7 +10,7 @@ const Purifier = () => {
     return (
         <div className=" bg-[#e6e5e7] sm:bg-transparent flex flex-col items-center sm:flex-none py-10 sm:py-0 ">
              <div className="sm:absolute sm:mt-36 sm:ml-[30px] flex flex-col items-center ">
-            <h1 className="sm:text-5xl text-3xl">THE FUJIIRYOKI</h1>
+            <h1 className="sm:text-5xl text-3xl">THE JUST PURE</h1>
               <span className="block"><h1 className="sm:text-5xl text-3xl">  ALKALINE WATER IONIZER</h1></span>
               </div>
             <div className=" sm:absolute  sm:flex sm:mt-80 sm:ml-[30px]  ">

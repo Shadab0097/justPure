@@ -55,7 +55,7 @@ const Carousel = () => {
 
             {images.map((image, index) => {
 
-              return <img src={image} key={index} alt="" className='w-[532px] h-[450px] mt-6 ml-4 mr-4 mb-10 ' />
+              return <img src={image} key={index} alt="" className='w-[500px] h-[350px] mt-6 ml-4 mr-4 mb-10 object-cover rounded-3xl' />
 
             })}
 
