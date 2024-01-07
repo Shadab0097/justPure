@@ -79,7 +79,7 @@ if(res){
   email:"",
   phone:"",
   message:"",})
-  alert("Data Stored")
+  
 }else{
   alert("plz fill the Data")
 }
