@@ -49,9 +49,9 @@ const Carousel = () => {
 
           </button>
         </div>
-        <div id='title' className='flex overflow-x-scroll no-scrollbar scroll-smooth'>
+        <div id='title' className='flex overflow-x-scroll no-scrollbar scroll-smooth '>
 
-          <div className="flex ">
+          <div className="flex  ">
 
             {images.map((image, index) => {
 
