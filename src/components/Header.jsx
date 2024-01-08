@@ -1,20 +1,13 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import justpureLogo from '../assets/images/justPure-logo.png'
 
 export default  function Navbar () {
 
   const [state, setState] = useState(false)
 
-  // Replace javascript:void(0) path with your path
-  // const navigation = [
-  //     { title: "Home", path: "javascript:void(0)" },
-  //     { title: "Store", path: "javascript:void(0)" },
-  //     { title: "Contact Us", path: "javascript:void(0)" },
-  //     { title: "About Us", path: "javascript:void(0)" }
-  // ]
-  // function classNames(...classes) {
-  //   return classes.filter(Boolean).join(" ");
-  // }
+  const navigate = useNavigate()
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -38,28 +31,26 @@ export default  function Navbar () {
     "transition-all",
     "duration-300",
     "z-50",
-    // "border-b",
     "md:border-0"
     
   ];
   if (isScrolled) {
     navbarClasses.push("bg-white");
-    // navbarClasses.push("text-black");
   }
 
   return (
       <nav id="navbar" className={`${navbarClasses.join(" ")}  ${state ? 'bg-white' : ''} ${isScrolled || state ? 'text-black' : 'text-white'} `}>
-          <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+          <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8 h-auto">
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                    <a href="javascript:void(0)">
-                        {/* <img
-                            src="https://www.floatui.com/logo.svg" 
-                            width={120} 
-                            height={50}
-                            alt="Float UI logo"
-                        /> */}
-                        <h1>just pure</h1>
-                    </a>
+                    <Link to="/">
+                        <img
+                            src={justpureLogo} 
+                            width={100} 
+                            height={40}
+                            alt="Just Pure logo"
+                        />
+                        {/* <h1>just pure</h1> */}
+                    </Link>
                   <div className="md:hidden">
                       <button className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
                           onClick={() => setState(!state)}
@@ -79,30 +70,26 @@ export default  function Navbar () {
                   </div>
               </div>
               <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${ state ? 'block' : 'hidden'} `}>
-                  <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0 ">
-                      {/* {
-                          navigation.map((item, idx) => {
-                              return (
-                                <li key={idx} className="text-gray-600 hover:text-indigo-600">
-                                    <a href={item.path}>
-                                        { item.title }
-                                    </a>
-                                </li>
-                              )
-                          })
-                      } */}
-
-                  <Link to="/" >   <li>Home</li> </Link>
-                  <Link to="/store">    <li>Store</li></Link>
-                  <Link to="/about"> <li>About Us</li></Link> 
-                   <Link to="/contact">  <li>Contact Us</li></Link> 
+                  <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0 font-bold text-xl ">
+                  <Link to="/" className="hover:text-blue-500 hover:underline">
+        <li className="transition duration-300 ease-in-out transform hover:scale-105">Home</li>
+      </Link>
+      <Link to="/store" className="hover:text-blue-500 hover:underline">
+        <li className="transition duration-300 ease-in-out transform hover:scale-105">Store</li>
+      </Link>
+      <Link to="/about" className="hover:text-blue-500 hover:underline">
+        <li className="transition duration-300 ease-in-out transform hover:scale-105">About Us</li>
+      </Link>
+      <Link to="/contact" className="hover:text-blue-500 hover:underline">
+        <li className="transition duration-300 ease-in-out transform hover:scale-105">Contact Us</li>
+      </Link>
 
                   </ul>
               </div>
               <div className="hidden md:inline-block">
-                <a href="javascript:void(0)" className="py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow">
+                <button className="py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow" onClick={()=>navigate("/store")}>
                     Get Started
-                </a>
+                </button>
               </div>
           </div>
       </nav>

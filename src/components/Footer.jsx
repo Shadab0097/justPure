@@ -1,3 +1,6 @@
+import justpureLogo from '../assets/images/justPure-logo.png'
+ 
+ 
  const Footer = () => {
 
  
@@ -6,12 +9,12 @@
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="justify-between sm:flex">
                     <div className="space-y-6">
-                        {/* <img src="https://www.floatui.com/logo.svg" className="w-32" /> */}
-                        <h1>Just Pure</h1>
-                        <p className="max-w-md">
+                        <img src={justpureLogo} className="w-32" />
+                        {/* <h1>Just Pure</h1> */}
+                        <p className="max-w-md font-bold">
                            Stay Connected
                         </p>
-                        <ul className="flex flex-wrap items-center gap-4 text-sm sm:text-base">
+                        <ul className="flex flex-wrap items-center gap-4  sm:text-base text-2xl font-bold">
                           <li>Terms</li>
                           <li>License</li>
                           <li>Privacy</li>
@@ -22,7 +25,7 @@
                   
                 </div>
                 <div className="mt-10 py-10 border-t md:text-center">
-                    <p>© 2022 Just Pure pvt ltd. All rights reserved.</p>
+                    <p>© 2023 Just Pure pvt ltd. All rights reserved.</p>
                 </div>
             </div>
         </footer>

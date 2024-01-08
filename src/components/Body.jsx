@@ -1,9 +1,10 @@
 
-import Home from './Home';
-import AboutUs from './AboutUs'
-import ContactUs from './ContactUs'
+import Home from '../components/Home';
+import AboutUs from '../components/AboutUs'
+import ContactUs from '../components/ContactUs'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Store from './Store';
+import Store from '../components/Store';
+import PrivacyPolicy from './PrivacyPolicy';
 
 
  const Body = () => {
@@ -25,6 +26,11 @@ import Store from './Store';
         {
           path:"/Store",
           element:<Store/>
+        }
+        ,
+        {
+          path:"/privacy",
+          element:<PrivacyPolicy/>
         }
       ]);
   return (

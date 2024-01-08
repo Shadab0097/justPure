@@ -1,11 +1,9 @@
-import hanscon from './assets//images/justPureAlkaline.jpg';
-
-
-
-
-
+import hanscon from '../assets//images/justPureAlkaline.jpg';
+import { useNavigate } from "react-router-dom"
 
 const Video = () => {
+  const navigate = useNavigate()
+
   return (
     <>
       <section className="flex flex-col md:flex-row">
@@ -28,7 +26,7 @@ const Video = () => {
               <span className="">YOU CONSUME?</span>
             </h1>
             <p className="text-md md:text-lg lg:text-xl mb-4">Get Detailed Information</p>
-            <button className="px-5 py-3 text-white duration-100 border-2 border-white rounded-full hover:border-indigo-600 hover:bg-blue-900 active:shadow-lg text-lg md:text-lg lg:text-lg font-bold">
+            <button className="px-5 py-3 text-white duration-100 border-2 border-white rounded-full hover:border-indigo-600 hover:bg-blue-900 active:shadow-lg text-lg md:text-lg lg:text-lg font-bold"onClick={()=>navigate("/contact")}>
               Contact Us to Know More
             </button>
           </div>
@@ -48,7 +46,7 @@ const Video = () => {
               <span>ALKALINE WATER IONIZER</span>
             </h1>
             <p className="text-md md:text-lg lg:text-xl mb-4">Get Detailed Information</p>
-            <button className="px-5 py-3 text-white duration-100 border-2 border-white rounded-full hover:border-indigo-600 hover:bg-blue-900 active:shadow-lg text-lg md:text-lg lg:text-lg font-bold">
+            <button className="px-5 py-3 text-white duration-100 border-2 border-white rounded-full hover:border-indigo-600 hover:bg-blue-900 active:shadow-lg text-lg md:text-lg lg:text-lg font-bold"onClick={()=>navigate("/store")}>
               Visit Our Store!
             </button>
           </div>
@@ -59,13 +57,13 @@ const Video = () => {
         <button className="px-7 py-4 text-gray-700 duration-100 border-2 border-black rounded-full hover:border-indigo-600 active:shadow-lg">
           Return & Refund
         </button>
-        <button className="px-7 py-4 text-gray-700 duration-100 border-2 border-black rounded-full hover:border-indigo-600 active:shadow-lg">
+        <button className="px-7 py-4 text-gray-700 duration-100 border-2 border-black rounded-full hover:border-indigo-600 active:shadow-lg" onClick={()=>navigate("/privacy")}>
           Privacy Policy
         </button>
         <button className="px-7 py-4 text-gray-700 duration-100 border-2 border-black rounded-full hover:border-indigo-600 active:shadow-lg">
           Term & Condition
         </button>
-        <button className="px-7 py-4 text-gray-700 duration-100 border-2 border-black rounded-full hover:border-indigo-600 active:shadow-lg">
+        <button className="px-7 py-4 text-gray-700 duration-100 border-2 border-black rounded-full hover:border-indigo-600 active:shadow-lg" onClick={()=>navigate("/store")}>
           Store
         </button>
       </div>

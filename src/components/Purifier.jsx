@@ -1,7 +1,7 @@
-import alkaline from "./assets/Fujiiryoki-Alkaline-Water-2.jpg"
-import productLife from "./assets/product_life-2.png"
-import impurity from "./assets/Remove_impority.png"
-import warranty from "./assets/warranty.webp"
+import alkaline from "../assets/Fujiiryoki-Alkaline-Water-2.jpg"
+import productLife from "../assets/product_life-2.png"
+import impurity from "../assets/Remove_impority.png"
+import warranty from "../assets/warranty.webp"
 
 
 
