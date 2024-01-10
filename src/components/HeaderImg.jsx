@@ -5,7 +5,7 @@ import { useSpring, animated } from 'react-spring';
 const HeaderImg = () => {
   const navigate = useNavigate()
   const handleClick = () => {
-    navigate("/Contact")
+    navigate("/store")
   }
 
   const fadeIn = useSpring({

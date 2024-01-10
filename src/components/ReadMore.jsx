@@ -77,7 +77,7 @@ const ReadMore = () => {
                                 className=""
                                 alt=""
                             />
-                            <p className="">The Only Certified security solutions</p>
+                            <p className="">The Only Certified Purity Solutions</p>
                         </div>
                     </div>
                 </div>

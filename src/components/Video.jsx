@@ -1,4 +1,6 @@
-import hanscon from '../assets//images/justPureAlkaline.jpg';
+// import hanscon from '../assets//images/justPureAlkaline.jpg';
+import justPueVideo from '../assets//images/justPureGIF.mp4';
+
 import { useNavigate } from "react-router-dom"
 
 const Video = () => {
@@ -34,12 +36,17 @@ const Video = () => {
 
         {/* Image Div */}
         <div className="relative w-full md:w-1/2">
-          <img
-            src={hanscon}
-            className="w-full h-full object-cover"
-            alt="Image Alt Text"
-          />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center  w-full h-full bg-[#2d2d2d] opacity-[0.5] sm:pt-[9rem] pt-10 md:pt-[5rem] lg:pt-[9rem]">
+        <video
+            className="w-full h-auto object-cover opacity-[1]"
+            preload="auto"
+            loop
+            autoPlay
+            muted
+            playsInline
+          >
+            <source src={justPueVideo} type="video/mp4" />
+          </video>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center  w-full h-full bg-[#2d2d2d] opacity-[0.5] sm:pt-[9rem] pt-10 md:pt-[5rem] lg:pt-[9rem] z-20">
             <h1 className="text-xl md:text-xl lg:text-2xl font-bold mb-4">
               <span className="ml-4 md:ml-10">GET A HANDS-ON</span>
               <span className="block md:ml-8">EXPERIENCE OF THE</span>
