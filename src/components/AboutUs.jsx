@@ -62,7 +62,23 @@ const AboutUs = () => {
 
             Haryana, India.</p>
         </animated.div>
+        <div className="max-w-3xl mx-auto p-8">
+      <h1 className="text-3xl font-bold justify-center flex pb-4">WHY CHOOSE JUST PURE</h1>
+      <p className="text-gray-700">
+        <span className="font-bold">Quality Assurance:</span> Every unit undergoes rigorous testing to ensure durability and performance, providing you with a reliable and long-lasting investment.
 
+      </p>
+      <p className="text-gray-700 mt-4">
+        <span className="font-bold">Health and Wellness:</span> Elevate your lifestyle with the countless potential health benefits associated with alkaline water consumption, supported by our cutting-edge water ionization technology.
+
+      </p>
+      <p className="text-gray-700 mt-4">
+        <span className="font-bold">Customer Satisfaction:</span>
+        Join a community of satisfied customers who have experienced the transformative effects of our Just Pure Water Ionizer. Your satisfaction is our priority.
+
+      </p>
+    
+    </div>
         <animated.div
           style={whyUsAnimation}
           className="mx-4 md:w-1/2"
