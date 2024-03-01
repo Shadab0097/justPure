@@ -10,12 +10,13 @@ import Footer from '../components/Footer'
 
 
 const Home = () => {
+ 
   return (
     <div>
         <Header/>
       <HeaderImg/>
        <HeroSection/>
-       <Carousel/>
+       <Carousel />
        <ReadMore/>
        <Purifier/>
        <Video/>

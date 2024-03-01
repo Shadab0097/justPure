@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import home_BG from '../assets/home_BG.webp'
 import { useSpring, animated } from 'react-spring';
+import VideoCaraousal from '../components/VideoCaraousal'
 
 const HeaderImg = () => {
   const navigate = useNavigate()
@@ -52,6 +53,7 @@ const HeaderImg = () => {
         </p>
 
       </div>
+      <VideoCaraousal/>
     </>
   )
 }

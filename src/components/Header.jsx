@@ -83,6 +83,9 @@ export default  function Navbar () {
       <Link to="/contact" className="hover:text-blue-500 hover:underline">
         <li className="transition duration-300 ease-in-out transform hover:scale-105">Contact Us</li>
       </Link>
+      <Link to="/whychooseus" className="hover:text-blue-500 hover:underline">
+        <li className="transition duration-300 ease-in-out transform hover:scale-105">Why Choose Us</li>
+      </Link>
 
                   </ul>
               </div>

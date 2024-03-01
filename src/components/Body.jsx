@@ -5,6 +5,7 @@ import ContactUs from '../components/ContactUs'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Store from '../components/Store';
 import PrivacyPolicy from './PrivacyPolicy';
+import WhyChooseUs from './WhyChooseUs';
 
 
  const Body = () => {
@@ -31,6 +32,11 @@ import PrivacyPolicy from './PrivacyPolicy';
         {
           path:"/privacy",
           element:<PrivacyPolicy/>
+        }
+        ,
+        {
+          path:"/whychooseus",
+          element:<WhyChooseUs/>
         }
       ]);
   return (
