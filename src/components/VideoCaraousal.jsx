@@ -38,7 +38,9 @@ const VideoCarousal = () => {
 
   return (
     <div>
-      <h1 className='flex break-words justify-center mt-14 sm:text-4xl text-xl font-bold'> WHY JUST PURE ALKALINE WATER IONIZER</h1>
+        <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center mt-14 sm:mt-20 sm:text-5xl'>
+         WHY JUST PURE ALKALINE WATER IONIZER
+      </h1>
       <div className='  overflow-x-hidden relative  '>
         <h2 className='text-2xl mt-1 md:mt-5 font-medium py-3 text-white'>title</h2>
         <div className='  absolute  flex justify-between mt-40 w-[1020px] ml-0 md:ml-80 md:w-[600px]'>
@@ -69,7 +71,7 @@ const VideoCarousal = () => {
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
-                className='w-[500px] h-[350px] mt-2 ml-4 mr-4 mb-10 rounded-3xl'
+                className='w-[350px] h-[350px] mt-2 ml-4 mr-4 mb-10 rounded-3xl'
               ></iframe>
             ))}
 

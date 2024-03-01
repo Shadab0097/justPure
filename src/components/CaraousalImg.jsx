@@ -14,7 +14,7 @@ import img5 from '../assets/images/justpure4.png';
 
 const Carousel = () => {
 
-  const images = [ img1, img2, img3, img5];
+  const images = [img1, img2, img3, img5];
 
   const handleLeft = () => {
     let scroller = document.getElementById('title');
@@ -29,7 +29,9 @@ const Carousel = () => {
 
   return (
     <div>
-      <h1 className='flex break-words justify-center mt-14 sm:text-4xl text-xl font-bold'>JUST PURE ALKALINE WATER IONIZER</h1>
+      <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center mt-14 sm:mt-20 sm:text-5xl'>
+        JUST PURE ALKALINE WATER IONIZER
+      </h1>
       <div className='  overflow-x-hidden relative  '>
         <h2 className='text-2xl mt-1 md:mt-5 font-medium py-3 text-white'>title</h2>
         <div className='  absolute  flex justify-between mt-48 w-[1020px] ml-0 md:ml-80 md:w-[600px]'>
