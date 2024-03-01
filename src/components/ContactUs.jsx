@@ -273,7 +273,7 @@ const ContactUs = () => {
                 Lets Connect
               </button>
             </div>
-          </form> : <h1 className='text-purple-700 text-4xl'>Responose Submitted! we will Get Back to you as soon as possible</h1>}
+          </form> : <h1 className='text-purple-700 text-4xl'>Response Submitted! we will Get Back to you as soon as possible</h1>}
         </div>
 
       </div>
